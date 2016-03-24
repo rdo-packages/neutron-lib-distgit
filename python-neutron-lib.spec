@@ -4,13 +4,13 @@
 %global module neutron_lib
 
 Name:       python-%{library}
-Version:    XXX
-Release:    XXX
+Version:    0.0.2
+Release:    1%{?dist}
 Summary:    OpenStack Neutron library
 License:    ASL 2.0
 URL:        http://launchpad.net/neutron/
 
-Source0:    http://tarballs.openstack.org/%{library}/%{library}-master.tar.gz
+Source0:    http://tarballs.openstack.org/%{library}/%{library}-%{version}%{?milestone}.tar.gz
 
 BuildArch:  noarch
 
@@ -86,3 +86,5 @@ rm -rf html/.{doctrees,buildinfo}
 %doc html README.rst
 
 %changelog
+* Thu Mar 24 2016 RDO <rdo-list@redhat.com> 0.0.2-0.1
+- RC1 Rebuild for Mitaka .2
