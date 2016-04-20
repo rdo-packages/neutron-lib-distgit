@@ -1,5 +1,5 @@
 [gerrit]
-host=review.gerrithub.io
+host=review.rdoproject.org
 port=29418
-project=openstack-packages/python-neutron-lib
+project=openstack/neutron-lib-distgit
 defaultbranch=rpm-master
