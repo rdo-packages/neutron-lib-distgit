@@ -10,7 +10,7 @@ Summary:    OpenStack Neutron library
 License:    ASL 2.0
 URL:        http://launchpad.net/neutron/
 
-Source0:    http://tarballs.openstack.org/%{library}/%{library}-master.tar.gz
+Source0:    http://tarballs.openstack.org/%{library}/%{library}-%{upstream_version}.tar.gz
 
 BuildArch:  noarch
 
@@ -19,15 +19,17 @@ BuildRequires:  python-pbr
 BuildRequires:  python-setuptools
 BuildRequires:  git
 
-Requires:   python-babel >= 1.3
+Requires:   python-babel >= 2.3.4
 Requires:   python-debtcollector >= 1.2.0
-Requires:   python-oslo-config >= 2:3.4.0
-Requires:   python-oslo-db >= 4.1.0
+Requires:   python-oslo-config >= 2:3.14.0
+Requires:   python-oslo-context >= 2.9.0
+Requires:   python-oslo-db >= 4.10.0
 Requires:   python-oslo-i18n >= 2.1.0
 Requires:   python-oslo-log >= 1.14.0
-Requires:   python-oslo-messaging >= 4.0.0
-Requires:   python-oslo-service >= 1.0.0
-Requires:   python-oslo-utils >= 3.4.0
+Requires:   python-oslo-messaging >= 5.2.0
+Requires:   python-oslo-policy >= 1.9.0
+Requires:   python-oslo-service >= 1.10.0
+Requires:   python-oslo-utils >= 3.16.0
 
 
 %description
