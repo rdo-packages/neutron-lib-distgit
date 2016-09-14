@@ -4,8 +4,8 @@
 %global module neutron_lib
 
 Name:       python-%{library}
-Version:    XXX
-Release:    XXX
+Version:    0.4.0
+Release:    1%{?dist}
 Summary:    OpenStack Neutron library
 License:    ASL 2.0
 URL:        http://launchpad.net/neutron/
@@ -88,3 +88,6 @@ rm -rf html/.{doctrees,buildinfo}
 %doc html README.rst
 
 %changelog
+* Wed Sep 14 2016 Haikel Guemar <hguemar@fedoraproject.org> 0.4.0-1
+- Update to 0.4.0
+
