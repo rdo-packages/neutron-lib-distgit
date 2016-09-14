@@ -4,7 +4,7 @@
 %global module neutron_lib
 
 Name:       python-%{library}
-Version:    0.0.2
+Version:    0.0.3
 Release:    1%{?dist}
 Summary:    OpenStack Neutron library
 License:    ASL 2.0
@@ -86,5 +86,8 @@ rm -rf html/.{doctrees,buildinfo}
 %doc html README.rst
 
 %changelog
+* Wed Sep 14 2016 Haikel Guemar <hguemar@fedoraproject.org> 0.0.3-1
+- Update to 0.0.3
+
 * Thu Mar 24 2016 RDO <rdo-list@redhat.com> 0.0.2-0.1
 - RC1 Rebuild for Mitaka .2
