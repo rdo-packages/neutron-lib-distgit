@@ -10,7 +10,7 @@ Summary:    OpenStack Neutron library
 License:    ASL 2.0
 URL:        http://launchpad.net/neutron/
 
-Source0:    http://tarballs.openstack.org/%{library}/%{library}-%{upstream_version}.tar.gz
+Source0:    https://tarballs.openstack.org/%{library}/%{library}-%{upstream_version}.tar.gz
 
 BuildArch:  noarch
 
