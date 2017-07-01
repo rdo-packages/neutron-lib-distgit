@@ -51,7 +51,7 @@ This package contains the Neutron library test files.
 Summary:    OpenStack Neutron library documentation
 
 BuildRequires: python-sphinx
-BuildRequires: python-oslo-sphinx
+BuildRequires: python-openstackdocstheme
 
 %description doc
 OpenStack Neutron library shared by all Neutron sub-projects.
@@ -67,9 +67,9 @@ rm -f *requirements.txt
 %build
 %py2_build
 # generate html docs
-sphinx-build doc/source html
+%{__python2} setup.py build_sphinx -b html
 # remove the sphinx-build leftovers
-rm -rf html/.{doctrees,buildinfo}
+rm -rf doc/build/html/.{doctrees,buildinfo}
 
 %install
 %py2_install
@@ -86,6 +86,6 @@ rm -rf html/.{doctrees,buildinfo}
 
 %files doc
 %license LICENSE
-%doc html README.rst
+%doc doc/build/html README.rst
 
 %changelog
