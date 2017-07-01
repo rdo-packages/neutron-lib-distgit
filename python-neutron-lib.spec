@@ -89,3 +89,4 @@ rm -rf html/.{doctrees,buildinfo}
 %doc html README.rst
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/neutron-lib/commit/?id=d52cb5f1e2e01fbf2404259e4acd0a6bb285d87a
