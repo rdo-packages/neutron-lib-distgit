@@ -51,7 +51,7 @@ This package contains the Neutron library test files.
 Summary:    OpenStack Neutron library documentation
 
 BuildRequires: python-sphinx
-BuildRequires: python-oslo-sphinx
+BuildRequires: python-openstackdocstheme
 
 %description doc
 OpenStack Neutron library shared by all Neutron sub-projects.
