@@ -52,6 +52,17 @@ Summary:    OpenStack Neutron library documentation
 
 BuildRequires: python-sphinx
 BuildRequires: python-openstackdocstheme
+BuildRequires: python-oslo-context
+BuildRequires: python-oslo-concurrency
+BuildRequires: python-oslo-db
+BuildRequires: python-oslo-i18n
+BuildRequires: python-oslo-log
+BuildRequires: python-oslo-utils
+BuildRequires: python-oslo-policy
+BuildRequires: python-oslo-service
+BuildRequires: python-netaddr
+BuildRequires: python-debtcollector
+BuildRequires: python-fixtures
 
 %description doc
 OpenStack Neutron library shared by all Neutron sub-projects.
