@@ -125,6 +125,7 @@ BuildRequires: python-oslo-service
 BuildRequires: python-netaddr
 BuildRequires: python-debtcollector
 BuildRequires: python-fixtures
+BuildRequires: openstack-macros
 
 %description doc
 %{common_desc}
@@ -135,7 +136,7 @@ This package contains the documentation.
 %autosetup -n %{library}-%{upstream_version} -S git
 
 # Let's handle dependencies ourseleves
-rm -f *requirements.txt
+%py_req_cleanup
 
 %build
 %py2_build
