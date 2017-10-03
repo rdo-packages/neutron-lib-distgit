@@ -3,6 +3,8 @@
 %global library neutron-lib
 %global module neutron_lib
 
+%global common_desc OpenStack Neutron library shared by all Neutron sub-projects.
+
 Name:       python-%{library}
 Version:    XXX
 Release:    XXX
@@ -34,7 +36,7 @@ Requires:   python-sqlalchemy >= 1.0.10
 Requires:   python-stevedore
 
 %description
-OpenStack Neutron library shared by all Neutron sub-projects.
+%{common_desc}
 
 
 %package tests
@@ -42,7 +44,7 @@ Summary:    OpenStack Neutron library tests
 Requires:   python-%{library} = %{version}-%{release}
 
 %description tests
-OpenStack Neutron library shared by all Neutron sub-projects.
+%{common_desc}
 
 This package contains the Neutron library test files.
 
@@ -65,7 +67,7 @@ BuildRequires: python-debtcollector
 BuildRequires: python-fixtures
 
 %description doc
-OpenStack Neutron library shared by all Neutron sub-projects.
+%{common_desc}
 
 This package contains the documentation.
 
