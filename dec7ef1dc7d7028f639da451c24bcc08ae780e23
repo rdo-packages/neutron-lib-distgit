@@ -1,0 +1,8 @@
+Code-Review+2: Ihar Hrachyshka <ihrachys@redhat.com>
+Workflow+1: Ihar Hrachyshka <ihrachys@redhat.com>
+Verified+2: Jenkins CI <admin@rpmfactory.beta.rdoproject.org>
+Submitted-by: Jenkins CI <admin@rpmfactory.beta.rdoproject.org>
+Submitted-at: Wed, 29 Nov 2017 18:54:50 +0000
+Reviewed-on: https://review.rdoproject.org/r/9641
+Project: openstack/neutron-lib-distgit
+Branch: refs/heads/rpm-master
