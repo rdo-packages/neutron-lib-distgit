@@ -32,6 +32,7 @@ BuildRequires:  git
 Summary:    OpenStack Neutron library
 %{?python_provide:%python_provide python2-%{library}}
 # Required for tests
+BuildRequires: python-keystoneauth1
 BuildRequires: python-os-testr
 BuildRequires: python-oslotest
 BuildRequires: python-testresources
@@ -39,6 +40,7 @@ BuildRequires: python-testscenarios
 BuildRequires: python-testtools
 
 Requires:   python-debtcollector >= 1.2.0
+Requires:   python-keystoneauth1 >= 3.3.0
 Requires:   python-oslo-concurrency >= 3.8.0
 Requires:   python-oslo-config >= 2:4.0.0
 Requires:   python-oslo-context >= 2.14.0
@@ -74,6 +76,7 @@ BuildRequires:  python3-devel
 BuildRequires:  python3-pbr
 BuildRequires:  python3-setuptools
 # Required for tests
+BuildRequires: python3-keystoneauth1
 BuildRequires: python3-os-testr
 BuildRequires: python3-oslotest
 BuildRequires: python3-testresources
@@ -81,6 +84,7 @@ BuildRequires: python3-testscenarios
 BuildRequires: python3-testtools
 
 Requires:   python3-debtcollector >= 1.2.0
+Requires:   python3-keystoneauth1 >= 3.3.0
 Requires:   python3-oslo-concurrency >= 3.8.0
 Requires:   python3-oslo-config >= 2:4.0.0
 Requires:   python3-oslo-context >= 2.14.0
