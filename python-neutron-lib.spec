@@ -24,6 +24,7 @@ BuildRequires:  python2-devel
 BuildRequires:  python-pbr
 BuildRequires:  python-setuptools
 BuildRequires:  git
+BuildRequires:  openstack-macros
 
 %description
 %{common_desc}
@@ -129,7 +130,6 @@ BuildRequires: python-oslo-service
 BuildRequires: python-netaddr
 BuildRequires: python-debtcollector
 BuildRequires: python-fixtures
-BuildRequires: openstack-macros
 
 %description doc
 %{common_desc}
