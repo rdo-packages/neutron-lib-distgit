@@ -21,8 +21,8 @@ Source0:    https://tarballs.openstack.org/%{library}/%{library}-%{upstream_vers
 BuildArch:  noarch
 
 BuildRequires:  python2-devel
-BuildRequires:  python-pbr
-BuildRequires:  python-setuptools
+BuildRequires:  python2-pbr
+BuildRequires:  python2-setuptools
 BuildRequires:  git
 
 %description
@@ -32,27 +32,39 @@ BuildRequires:  git
 Summary:    OpenStack Neutron library
 %{?python_provide:%python_provide python2-%{library}}
 # Required for tests
-BuildRequires: python-keystoneauth1
-BuildRequires: python-os-testr
-BuildRequires: python-oslotest
-BuildRequires: python-testresources
+BuildRequires: python2-keystoneauth1
+BuildRequires: python2-os-testr
+BuildRequires: python2-oslotest
+BuildRequires: python2-testtools
+%if 0%{?fedora} > 0
+BuildRequires: python2-testscenarios
+BuildRequires: python2-testresources
+%else
 BuildRequires: python-testscenarios
-BuildRequires: python-testtools
+BuildRequires: python-testresources
+%endif
 
-Requires:   python-debtcollector >= 1.2.0
-Requires:   python-keystoneauth1 >= 3.3.0
-Requires:   python-oslo-concurrency >= 3.8.0
-Requires:   python-oslo-config >= 2:4.0.0
-Requires:   python-oslo-context >= 2.14.0
-Requires:   python-oslo-db >= 4.24.0
-Requires:   python-oslo-i18n >= 2.1.0
-Requires:   python-oslo-log >= 3.22.0
-Requires:   python-oslo-messaging >= 5.24.2
-Requires:   python-oslo-policy >= 1.23.0
-Requires:   python-oslo-service >= 1.10.0
-Requires:   python-oslo-utils >= 3.20.0
-Requires:   python-sqlalchemy >= 1.0.10
-Requires:   python-stevedore
+Requires:   python2-pbr
+Requires:   python2-debtcollector >= 1.2.0
+Requires:   python2-keystoneauth1 >= 3.3.0
+Requires:   python2-oslo-concurrency >= 3.25.0
+Requires:   python2-oslo-config >= 2:5.1.0
+Requires:   python2-oslo-context >= 2.19.2
+Requires:   python2-oslo-db >= 4.27.0
+Requires:   python2-oslo-i18n >= 3.15.3
+Requires:   python2-oslo-log >= 3.36.0
+Requires:   python2-oslo-messaging >= 5.29.0
+Requires:   python2-oslo-policy >= 1.30.0
+Requires:   python2-oslo-serialization >= 2.18.0
+Requires:   python2-oslo-service >= 1.24.0
+Requires:   python2-oslo-utils >= 3.33.0
+Requires:   python2-sqlalchemy >= 1.0.10
+Requires:   python2-stevedore
+%if 0%{?fedora} > 0
+Requires:   python2-webob >= 1.7.1
+%else
+Requires:   python-webob >= 1.7.1
+%endif
 
 %description -n python2-%{library}
 %{common_desc}
@@ -61,7 +73,7 @@ Requires:   python-stevedore
 %package -n python2-%{library}-tests
 Summary:    OpenStack Neutron library tests
 %{?python_provide:%python_provide python2-%{library}-tests}
-Requires:   python-%{library} = %{version}-%{release}
+Requires:   python2-%{library} = %{version}-%{release}
 
 %description -n python2-%{library}-tests
 %{common_desc}
@@ -83,20 +95,23 @@ BuildRequires: python3-testresources
 BuildRequires: python3-testscenarios
 BuildRequires: python3-testtools
 
+Requires:   python3-pbr
 Requires:   python3-debtcollector >= 1.2.0
 Requires:   python3-keystoneauth1 >= 3.3.0
-Requires:   python3-oslo-concurrency >= 3.8.0
-Requires:   python3-oslo-config >= 2:4.0.0
-Requires:   python3-oslo-context >= 2.14.0
-Requires:   python3-oslo-db >= 4.24.0
-Requires:   python3-oslo-i18n >= 2.1.0
-Requires:   python3-oslo-log >= 3.22.0
-Requires:   python3-oslo-messaging >= 5.24.2
-Requires:   python3-oslo-policy >= 1.23.0
-Requires:   python3-oslo-service >= 1.10.0
-Requires:   python3-oslo-utils >= 3.20.0
+Requires:   python3-oslo-concurrency >= 3.25.0
+Requires:   python3-oslo-config >= 2:5.1.0
+Requires:   python3-oslo-context >= 2.19.2
+Requires:   python3-oslo-db >= 4.27.0
+Requires:   python3-oslo-i18n >= 3.15.3
+Requires:   python3-oslo-log >= 3.36.0
+Requires:   python3-oslo-messaging >= 5.29.0
+Requires:   python3-oslo-policy >= 1.30.0
+Requires:   python3-oslo-serialization >= 2.18.0
+Requires:   python3-oslo-service >= 1.24.0
+Requires:   python3-oslo-utils >= 3.33.0
 Requires:   python3-sqlalchemy >= 1.0.10
 Requires:   python3-stevedore
+Requires:   python3-webob >= 1.7.1
 
 %description -n python3-%{library}
 %{common_desc}
@@ -116,20 +131,24 @@ This package contains the Neutron library test files.
 %package doc
 Summary:    OpenStack Neutron library documentation
 
-BuildRequires: python-sphinx
-BuildRequires: python-openstackdocstheme
-BuildRequires: python-oslo-context
-BuildRequires: python-oslo-concurrency
-BuildRequires: python-oslo-db
-BuildRequires: python-oslo-i18n
-BuildRequires: python-oslo-log
-BuildRequires: python-oslo-utils
-BuildRequires: python-oslo-policy
-BuildRequires: python-oslo-service
-BuildRequires: python-netaddr
-BuildRequires: python-debtcollector
-BuildRequires: python-fixtures
+BuildRequires: python2-sphinx
+BuildRequires: python2-openstackdocstheme
+BuildRequires: python2-oslo-context
+BuildRequires: python2-oslo-concurrency
+BuildRequires: python2-oslo-db
+BuildRequires: python2-oslo-i18n
+BuildRequires: python2-oslo-log
+BuildRequires: python2-oslo-utils
+BuildRequires: python2-oslo-policy
+BuildRequires: python2-oslo-service
+BuildRequires: python2-debtcollector
+BuildRequires: python2-fixtures
 BuildRequires: openstack-macros
+%if 0%{?fedora} > 0
+BuildRequires: python2-netaddr
+%else
+BuildRequires: python-netaddr
+%endif
 
 %description doc
 %{common_desc}
