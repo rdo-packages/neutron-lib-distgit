@@ -39,20 +39,23 @@ BuildRequires: python-testresources
 BuildRequires: python-testscenarios
 BuildRequires: python-testtools
 
+Requires:   python-pbr
 Requires:   python-debtcollector >= 1.2.0
 Requires:   python-keystoneauth1 >= 3.3.0
-Requires:   python-oslo-concurrency >= 3.8.0
-Requires:   python-oslo-config >= 2:4.0.0
-Requires:   python-oslo-context >= 2.14.0
-Requires:   python-oslo-db >= 4.24.0
-Requires:   python-oslo-i18n >= 2.1.0
-Requires:   python-oslo-log >= 3.22.0
-Requires:   python-oslo-messaging >= 5.24.2
-Requires:   python-oslo-policy >= 1.23.0
-Requires:   python-oslo-service >= 1.10.0
-Requires:   python-oslo-utils >= 3.20.0
+Requires:   python-oslo-concurrency >= 3.25.0
+Requires:   python-oslo-config >= 2:5.1.0
+Requires:   python-oslo-context >= 2.19.2
+Requires:   python-oslo-db >= 4.27.0
+Requires:   python-oslo-i18n >= 3.15.3
+Requires:   python-oslo-log >= 3.36.0
+Requires:   python-oslo-messaging >= 5.29.0
+Requires:   python-oslo-policy >= 1.30.0
+Requires:   python-oslo-serialization >= 2.18.0
+Requires:   python-oslo-service >= 1.24.0
+Requires:   python-oslo-utils >= 3.33.0
 Requires:   python-sqlalchemy >= 1.0.10
 Requires:   python-stevedore
+Requires:   python-webob >= 1.7.1
 
 %description -n python2-%{library}
 %{common_desc}
@@ -83,20 +86,23 @@ BuildRequires: python3-testresources
 BuildRequires: python3-testscenarios
 BuildRequires: python3-testtools
 
+Requires:   python3-pbr
 Requires:   python3-debtcollector >= 1.2.0
 Requires:   python3-keystoneauth1 >= 3.3.0
-Requires:   python3-oslo-concurrency >= 3.8.0
-Requires:   python3-oslo-config >= 2:4.0.0
-Requires:   python3-oslo-context >= 2.14.0
-Requires:   python3-oslo-db >= 4.24.0
-Requires:   python3-oslo-i18n >= 2.1.0
-Requires:   python3-oslo-log >= 3.22.0
-Requires:   python3-oslo-messaging >= 5.24.2
-Requires:   python3-oslo-policy >= 1.23.0
-Requires:   python3-oslo-service >= 1.10.0
-Requires:   python3-oslo-utils >= 3.20.0
+Requires:   python3-oslo-concurrency >= 3.25.0
+Requires:   python3-oslo-config >= 2:5.1.0
+Requires:   python3-oslo-context >= 2.19.2
+Requires:   python3-oslo-db >= 4.27.0
+Requires:   python3-oslo-i18n >= 3.15.3
+Requires:   python3-oslo-log >= 3.36.0
+Requires:   python3-oslo-messaging >= 5.29.0
+Requires:   python3-oslo-policy >= 1.30.0
+Requires:   python3-oslo-serialization >= 2.18.0
+Requires:   python3-oslo-service >= 1.24.0
+Requires:   python3-oslo-utils >= 3.33.0
 Requires:   python3-sqlalchemy >= 1.0.10
 Requires:   python3-stevedore
+Requires:   python3-webob >= 1.7.1
 
 %description -n python3-%{library}
 %{common_desc}
