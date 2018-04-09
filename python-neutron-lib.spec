@@ -168,7 +168,8 @@ This package contains the documentation.
 %endif
 
 # generate html docs
-%{__python2} setup.py build_sphinx -b html
+export PYTHONPATH=.
+sphinx-build -b html doc/source doc/build/html
 # remove the sphinx-build leftovers
 rm -rf doc/build/html/.{doctrees,buildinfo}
 
