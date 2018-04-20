@@ -37,9 +37,15 @@ BuildRequires: python2-os-testr
 BuildRequires: python2-oslotest
 BuildRequires: python2-testtools
 %if 0%{?fedora} > 0
+BuildRequires: python2-osprofiler
+BuildRequires: python2-pecan
+BuildRequires: python2-six
 BuildRequires: python2-testscenarios
 BuildRequires: python2-testresources
 %else
+BuildRequires: python-osprofiler
+BuildRequires: python-pecan
+BuildRequires: python-six
 BuildRequires: python-testscenarios
 BuildRequires: python-testresources
 %endif
@@ -61,8 +67,14 @@ Requires:   python2-oslo-utils >= 3.33.0
 Requires:   python2-sqlalchemy >= 1.0.10
 Requires:   python2-stevedore
 %if 0%{?fedora} > 0
+Requires:   python2-osprofiler >= 1.4.0
+Requires:   python2-pecan >= 1.0.0
+Requires:   python2-six >= 1.10.0
 Requires:   python2-webob >= 1.7.1
 %else
+Requires:   python-osprofiler >= 1.4.0
+Requires:   python-pecan >= 1.0.0
+Requires:   python-six >= 1.10.0
 Requires:   python-webob >= 1.7.1
 %endif
 
@@ -91,6 +103,9 @@ BuildRequires:  python3-setuptools
 BuildRequires: python3-keystoneauth1
 BuildRequires: python3-os-testr
 BuildRequires: python3-oslotest
+BuildRequires: python3-osprofiler
+BuildRequires: python3-pecan
+BuildRequires: python3-six
 BuildRequires: python3-testresources
 BuildRequires: python3-testscenarios
 BuildRequires: python3-testtools
@@ -109,6 +124,9 @@ Requires:   python3-oslo-policy >= 1.30.0
 Requires:   python3-oslo-serialization >= 2.18.0
 Requires:   python3-oslo-service >= 1.24.0
 Requires:   python3-oslo-utils >= 3.33.0
+Requires:   python3-osprofiler >= 1.4.0
+Requires:   python3-pecan >= 1.0.0
+Requires:   python3-six >= 1.10.0
 Requires:   python3-sqlalchemy >= 1.0.10
 Requires:   python3-stevedore
 Requires:   python3-webob >= 1.7.1
