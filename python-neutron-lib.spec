@@ -41,13 +41,14 @@ BuildRequires: python2-osprofiler
 BuildRequires: python2-pecan
 BuildRequires: python2-six
 BuildRequires: python2-testscenarios
-BuildRequires: python2-testresources
+BuildRequires: python2-weakrefmethod
 %else
 BuildRequires: python-osprofiler
 BuildRequires: python-pecan
 BuildRequires: python-six
 BuildRequires: python-testscenarios
 BuildRequires: python-testresources
+BuildRequires: python-weakrefmethod
 %endif
 
 Requires:   python2-pbr
@@ -70,11 +71,13 @@ Requires:   python2-stevedore
 Requires:   python2-osprofiler >= 1.4.0
 Requires:   python2-pecan >= 1.0.0
 Requires:   python2-six >= 1.10.0
+Requires:   python2-weakrefmethod >= 1.0.2
 Requires:   python2-webob >= 1.7.1
 %else
 Requires:   python-osprofiler >= 1.4.0
 Requires:   python-pecan >= 1.0.0
 Requires:   python-six >= 1.10.0
+Requires:   python-weakrefmethod >= 1.0.2
 Requires:   python-webob >= 1.7.1
 %endif
 
