@@ -232,3 +232,4 @@ rm -fr .testrepository
 %doc doc/build/html README.rst
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/neutron-lib/commit/?id=ef1929e511cafa6c26fd7f2f6e4350e9e35a33b8
