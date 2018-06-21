@@ -106,6 +106,8 @@ BuildRequires:  python3-setuptools
 # Required for tests
 BuildRequires: python3-keystoneauth1
 BuildRequires: python3-os-testr
+BuildRequires: python3-oslo-db
+BuildRequires: python3-oslo-policy
 BuildRequires: python3-oslotest
 BuildRequires: python3-osprofiler
 BuildRequires: python3-pecan
@@ -202,12 +204,14 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %py2_install
 
 %check
-%{__python2} setup.py test
+export OS_TEST_PATH='./neutron_lib/tests/unit'
+export PATH=$PATH:$RPM_BUILD_ROOT/usr/bin
+export PYTHONPATH=$PWD
+stestr --test-path $OS_TEST_PATH run
 %if 0%{?with_python3}
-rm -fr .testrepository
-%{__python3} setup.py test
+rm -rf .stestr
+stestr-3 --test-path $OS_TEST_PATH run
 %endif
-
 
 %files -n python2-%{library}
 %license LICENSE
