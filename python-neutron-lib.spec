@@ -54,9 +54,9 @@ BuildRequires: python-weakrefmethod
 
 Requires:   python2-pbr
 Requires:   python2-debtcollector >= 1.2.0
-Requires:   python2-keystoneauth1 >= 3.3.0
-Requires:   python2-oslo-concurrency >= 3.25.0
-Requires:   python2-oslo-config >= 2:5.1.0
+Requires:   python2-keystoneauth1 >= 3.4.0
+Requires:   python2-oslo-concurrency >= 3.26.0
+Requires:   python2-oslo-config >= 2:5.2.0
 Requires:   python2-oslo-context >= 2.19.2
 Requires:   python2-oslo-db >= 4.27.0
 Requires:   python2-oslo-i18n >= 3.15.3
@@ -66,6 +66,7 @@ Requires:   python2-oslo-policy >= 1.30.0
 Requires:   python2-oslo-serialization >= 2.18.0
 Requires:   python2-oslo-service >= 1.24.0
 Requires:   python2-oslo-utils >= 3.33.0
+Requires:   python2-oslo-versionedobjects >= 1.31.2
 Requires:   python2-sqlalchemy >= 1.0.10
 Requires:   python2-stevedore
 %if 0%{?fedora} > 0
@@ -118,9 +119,9 @@ BuildRequires: python3-testtools
 
 Requires:   python3-pbr
 Requires:   python3-debtcollector >= 1.2.0
-Requires:   python3-keystoneauth1 >= 3.3.0
-Requires:   python3-oslo-concurrency >= 3.25.0
-Requires:   python3-oslo-config >= 2:5.1.0
+Requires:   python3-keystoneauth1 >= 3.4.0
+Requires:   python3-oslo-concurrency >= 3.26.0
+Requires:   python3-oslo-config >= 2:5.2.0
 Requires:   python3-oslo-context >= 2.19.2
 Requires:   python3-oslo-db >= 4.27.0
 Requires:   python3-oslo-i18n >= 3.15.3
@@ -130,6 +131,7 @@ Requires:   python3-oslo-policy >= 1.30.0
 Requires:   python3-oslo-serialization >= 2.18.0
 Requires:   python3-oslo-service >= 1.24.0
 Requires:   python3-oslo-utils >= 3.33.0
+Requires:   python3-oslo-versionedobjects >= 1.31.2
 Requires:   python3-osprofiler >= 1.4.0
 Requires:   python3-pecan >= 1.0.0
 Requires:   python3-six >= 1.10.0
