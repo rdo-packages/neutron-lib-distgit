@@ -33,7 +33,6 @@ Summary:    OpenStack Neutron library
 %{?python_provide:%python_provide python2-%{library}}
 # Required for tests
 BuildRequires: python2-keystoneauth1
-BuildRequires: python2-os-testr
 BuildRequires: python2-oslotest
 BuildRequires: python2-testtools
 %if 0%{?fedora} > 0
@@ -55,6 +54,7 @@ BuildRequires: python-weakrefmethod
 Requires:   python2-pbr
 Requires:   python2-debtcollector >= 1.2.0
 Requires:   python2-keystoneauth1 >= 3.4.0
+Requires:   python2-os-traits >= 0.9.0
 Requires:   python2-oslo-concurrency >= 3.26.0
 Requires:   python2-oslo-config >= 2:5.2.0
 Requires:   python2-oslo-context >= 2.19.2
@@ -106,7 +106,6 @@ BuildRequires:  python3-pbr
 BuildRequires:  python3-setuptools
 # Required for tests
 BuildRequires: python3-keystoneauth1
-BuildRequires: python3-os-testr
 BuildRequires: python3-oslo-db
 BuildRequires: python3-oslo-policy
 BuildRequires: python3-oslotest
@@ -120,6 +119,7 @@ BuildRequires: python3-testtools
 Requires:   python3-pbr
 Requires:   python3-debtcollector >= 1.2.0
 Requires:   python3-keystoneauth1 >= 3.4.0
+Requires:   python3-os-traits >= 0.9.0
 Requires:   python3-oslo-concurrency >= 3.26.0
 Requires:   python3-oslo-config >= 2:5.2.0
 Requires:   python3-oslo-context >= 2.19.2
