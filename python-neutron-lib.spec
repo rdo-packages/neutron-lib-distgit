@@ -242,3 +242,4 @@ stestr-3 --test-path $OS_TEST_PATH run
 %doc doc/build/html README.rst
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/neutron-lib/commit/?id=83029819cdca6c771f01f7055fc4f1bdd662a9e2
