@@ -113,7 +113,7 @@ BuildRequires: python3-oslotest
 BuildRequires: python3-osprofiler
 BuildRequires: python3-pecan
 BuildRequires: python3-six
-BuildRequires: python3-stesr
+BuildRequires: python3-stestr
 BuildRequires: python3-testresources
 BuildRequires: python3-testscenarios
 BuildRequires: python3-testtools
