@@ -107,13 +107,14 @@ BuildRequires:  python3-pbr
 BuildRequires:  python3-setuptools
 # Required for tests
 BuildRequires: python3-keystoneauth1
+BuildRequires: python3-os-traits
 BuildRequires: python3-oslo-db
 BuildRequires: python3-oslo-policy
 BuildRequires: python3-oslotest
 BuildRequires: python3-osprofiler
 BuildRequires: python3-pecan
 BuildRequires: python3-six
-BuildRequires: python3-stesr
+BuildRequires: python3-stestr
 BuildRequires: python3-testresources
 BuildRequires: python3-testscenarios
 BuildRequires: python3-testtools
