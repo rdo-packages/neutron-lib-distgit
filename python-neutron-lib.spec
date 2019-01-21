@@ -10,6 +10,7 @@
 %global pyver_build %py%{pyver}_build
 # End of macros for py2/py3 compatibility
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+%global with_doc 1
 
 %global library neutron-lib
 %global module neutron_lib
@@ -49,6 +50,18 @@ BuildRequires: python%{pyver}-pecan
 BuildRequires: python%{pyver}-six
 BuildRequires: python%{pyver}-testscenarios
 BuildRequires: python%{pyver}-testresources
+BuildRequires: python%{pyver}-os-traits
+BuildRequires: python%{pyver}-oslo-context
+BuildRequires: python%{pyver}-oslo-concurrency
+BuildRequires: python%{pyver}-oslo-db
+BuildRequires: python%{pyver}-oslo-i18n
+BuildRequires: python%{pyver}-oslo-log
+BuildRequires: python%{pyver}-oslo-utils
+BuildRequires: python%{pyver}-oslo-policy
+BuildRequires: python%{pyver}-oslo-service
+BuildRequires: python%{pyver}-debtcollector
+BuildRequires: python%{pyver}-fixtures
+BuildRequires: python%{pyver}-netaddr
 
 # Handle python2 exception
 %if %{pyver} == 2
@@ -97,28 +110,18 @@ Requires:   python%{pyver}-%{library} = %{version}-%{release}
 
 This package contains the Neutron library test files.
 
+%if 0%{?with_doc}
 %package doc
 Summary:    OpenStack Neutron library documentation
 
 BuildRequires: python%{pyver}-sphinx
 BuildRequires: python%{pyver}-openstackdocstheme
-BuildRequires: python%{pyver}-os-traits
-BuildRequires: python%{pyver}-oslo-context
-BuildRequires: python%{pyver}-oslo-concurrency
-BuildRequires: python%{pyver}-oslo-db
-BuildRequires: python%{pyver}-oslo-i18n
-BuildRequires: python%{pyver}-oslo-log
-BuildRequires: python%{pyver}-oslo-utils
-BuildRequires: python%{pyver}-oslo-policy
-BuildRequires: python%{pyver}-oslo-service
-BuildRequires: python%{pyver}-debtcollector
-BuildRequires: python%{pyver}-fixtures
-BuildRequires: python%{pyver}-netaddr
 
 %description doc
 %{common_desc}
 
 This package contains the documentation.
+%endif
 
 %prep
 %autosetup -n %{library}-%{upstream_version} -S git
@@ -129,11 +132,13 @@ This package contains the documentation.
 %build
 %{pyver_build}
 
+%if 0%{?with_doc}
 # generate html docs
 export PYTHONPATH=.
 sphinx-build-%{pyver} -b html doc/source doc/build/html
 # remove the sphinx-build-%{pyver} leftovers
 rm -rf doc/build/html/.{doctrees,buildinfo}
+%endif
 
 %install
 %{pyver_install}
@@ -154,8 +159,10 @@ stestr-%{pyver} --test-path $OS_TEST_PATH run
 %license LICENSE
 %{pyver_sitelib}/%{module}/tests
 
+%if 0%{?with_doc}
 %files doc
 %license LICENSE
 %doc doc/build/html README.rst
+%endif
 
 %changelog
