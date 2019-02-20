@@ -62,6 +62,7 @@ BuildRequires: python%{pyver}-oslo-service
 BuildRequires: python%{pyver}-debtcollector
 BuildRequires: python%{pyver}-fixtures
 BuildRequires: python%{pyver}-netaddr
+BuildRequires: python%{pyver}-setproctitle
 
 # Handle python2 exception
 %if %{pyver} == 2
