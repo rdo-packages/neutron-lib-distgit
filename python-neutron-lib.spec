@@ -66,6 +66,9 @@ BuildRequires: python%{pyver}-netaddr
 # Handle python2 exception
 %if %{pyver} == 2
 BuildRequires: python-weakrefmethod
+BuildRequires: python-setproctitle
+%else
+BuildRequires: python%{pyver}-setproctitle
 %endif
 
 Requires:   python%{pyver}-pbr
@@ -94,6 +97,9 @@ Requires:   python%{pyver}-webob >= 1.7.1
 # Handle python2 exception
 %if %{pyver} == 2
 Requires:   python-weakrefmethod  >= 1.0.2
+Requires:   python-setproctitle
+%else
+Requires:   python%{pyver}-setproctitle
 %endif
 
 %description -n python%{pyver}-%{library}
