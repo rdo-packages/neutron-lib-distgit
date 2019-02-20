@@ -66,6 +66,9 @@ BuildRequires: python%{pyver}-netaddr
 # Handle python2 exception
 %if %{pyver} == 2
 BuildRequires: python-weakrefmethod
+BuildRequires: python-setproctitle
+%else
+BuildRequires: python%{pyver}-setproctitle
 %endif
 
 Requires:   python%{pyver}-pbr
