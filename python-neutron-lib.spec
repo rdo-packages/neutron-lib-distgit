@@ -59,7 +59,6 @@ BuildRequires: python%{pyver}-oslo-log
 BuildRequires: python%{pyver}-oslo-utils
 BuildRequires: python%{pyver}-oslo-policy
 BuildRequires: python%{pyver}-oslo-service
-BuildRequires: python%{pyver}-debtcollector
 BuildRequires: python%{pyver}-fixtures
 BuildRequires: python%{pyver}-netaddr
 
@@ -72,13 +71,12 @@ BuildRequires: python%{pyver}-setproctitle
 %endif
 
 Requires:   python%{pyver}-pbr
-Requires:   python%{pyver}-debtcollector >= 1.2.0
 Requires:   python%{pyver}-keystoneauth1 >= 3.4.0
 Requires:   python%{pyver}-os-traits >= 0.9.0
 Requires:   python%{pyver}-oslo-concurrency >= 3.26.0
 Requires:   python%{pyver}-oslo-config >= 2:5.2.0
 Requires:   python%{pyver}-oslo-context >= 2.19.2
-Requires:   python%{pyver}-oslo-db >= 4.27.0
+Requires:   python%{pyver}-oslo-db >= 4.37.0
 Requires:   python%{pyver}-oslo-i18n >= 3.15.3
 Requires:   python%{pyver}-oslo-log >= 3.36.0
 Requires:   python%{pyver}-oslo-messaging >= 5.29.0
@@ -87,7 +85,7 @@ Requires:   python%{pyver}-oslo-serialization >= 2.18.0
 Requires:   python%{pyver}-oslo-service >= 1.24.0
 Requires:   python%{pyver}-oslo-utils >= 3.33.0
 Requires:   python%{pyver}-oslo-versionedobjects >= 1.31.2
-Requires:   python%{pyver}-sqlalchemy >= 1.0.10
+Requires:   python%{pyver}-sqlalchemy >= 1.2.0
 Requires:   python%{pyver}-stevedore
 Requires:   python%{pyver}-osprofiler >= 1.4.0
 Requires:   python%{pyver}-pecan >= 1.0.0
