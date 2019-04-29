@@ -22,6 +22,30 @@
       "revId": "f15db3c8408d2398b1e386bc3c20972bb51337ad",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "27e26144_e7712ff1",
+        "filename": "python-neutron-lib.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2019-04-29T08:09:29Z",
+      "side": 1,
+      "message": "As a BR, we tend not to specify the version, since this is managed by the repos themselves.",
+      "parentUuid": "607d1ca4_3bba820d",
+      "range": {
+        "startLine": 60,
+        "startChar": 52,
+        "endLine": 60,
+        "endChar": 61
+      },
+      "revId": "f15db3c8408d2398b1e386bc3c20972bb51337ad",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
