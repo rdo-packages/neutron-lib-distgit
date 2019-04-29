@@ -46,6 +46,30 @@
       "revId": "f15db3c8408d2398b1e386bc3c20972bb51337ad",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f56b3d0d_901296b7",
+        "filename": "python-neutron-lib.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-04-29T09:49:44Z",
+      "side": 1,
+      "message": "Yes in BR is not necessary, dropping the version.",
+      "parentUuid": "607d1ca4_3bba820d",
+      "range": {
+        "startLine": 60,
+        "startChar": 52,
+        "endLine": 60,
+        "endChar": 61
+      },
+      "revId": "f15db3c8408d2398b1e386bc3c20972bb51337ad",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
