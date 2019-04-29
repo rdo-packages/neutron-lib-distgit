@@ -57,6 +57,7 @@ BuildRequires: python%{pyver}-oslo-db
 BuildRequires: python%{pyver}-oslo-i18n
 BuildRequires: python%{pyver}-oslo-log
 BuildRequires: python%{pyver}-oslo-utils
+BuildRequires: python%{pyver}-oslo-versionedobjects
 BuildRequires: python%{pyver}-oslo-policy
 BuildRequires: python%{pyver}-oslo-service
 BuildRequires: python%{pyver}-fixtures
