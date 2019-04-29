@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "607d1ca4_3bba820d",
+        "filename": "python-neutron-lib.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 580
+      },
+      "writtenOn": "2019-04-29T06:32:00Z",
+      "side": 1,
+      "message": "Do you need to specify here the version needed?",
+      "range": {
+        "startLine": 60,
+        "startChar": 52,
+        "endLine": 60,
+        "endChar": 61
+      },
+      "revId": "f15db3c8408d2398b1e386bc3c20972bb51337ad",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
