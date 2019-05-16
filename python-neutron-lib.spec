@@ -4,7 +4,7 @@
 %global module neutron_lib
 
 Name:       python-%{library}
-Version:    1.9.1
+Version:    1.9.2
 Release:    1%{?dist}
 Summary:    OpenStack Neutron library
 License:    ASL 2.0
@@ -100,6 +100,9 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %doc doc/build/html README.rst
 
 %changelog
+* Thu May 16 2019 RDO <dev@lists.rdoproject.org> 1.9.2-1
+- Update to 1.9.2
+
 * Mon Aug 21 2017 Alfredo Moralejo <amoralej@redhat.com> 1.9.1-1
 - Update to 1.9.1
 
