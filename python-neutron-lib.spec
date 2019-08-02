@@ -50,6 +50,7 @@ BuildRequires: python%{pyver}-pecan
 BuildRequires: python%{pyver}-six
 BuildRequires: python%{pyver}-testscenarios
 BuildRequires: python%{pyver}-testresources
+BuildRequires: python%{pyver}-os-ken
 BuildRequires: python%{pyver}-os-traits
 BuildRequires: python%{pyver}-oslo-context
 BuildRequires: python%{pyver}-oslo-concurrency
@@ -73,6 +74,7 @@ BuildRequires: python%{pyver}-setproctitle
 
 Requires:   python%{pyver}-pbr
 Requires:   python%{pyver}-keystoneauth1 >= 3.4.0
+Requires:   python%{pyver}-os-ken >= 0.3.0
 Requires:   python%{pyver}-os-traits >= 0.9.0
 Requires:   python%{pyver}-oslo-concurrency >= 3.26.0
 Requires:   python%{pyver}-oslo-config >= 2:5.2.0
