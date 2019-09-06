@@ -74,6 +74,7 @@ BuildRequires: python%{pyver}-setproctitle
 
 Requires:   python%{pyver}-pbr
 Requires:   python%{pyver}-keystoneauth1 >= 3.4.0
+Requires:   python%{pyver}-netaddr >= 0.7.18
 Requires:   python%{pyver}-os-ken >= 0.3.0
 Requires:   python%{pyver}-os-traits >= 0.9.0
 Requires:   python%{pyver}-oslo-concurrency >= 3.26.0
