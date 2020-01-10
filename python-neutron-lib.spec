@@ -174,3 +174,4 @@ PYTHON=%{pyver_bin} stestr-%{pyver} --test-path $OS_TEST_PATH run
 %endif
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/neutron-lib/commit/?id=84498a4730f4f39e6b33ec69322599a6f3a90bdd
