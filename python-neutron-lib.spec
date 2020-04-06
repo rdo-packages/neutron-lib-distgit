@@ -93,7 +93,6 @@ Requires:   python%{pyver}-sqlalchemy >= 1.2.0
 Requires:   python%{pyver}-stevedore
 Requires:   python%{pyver}-osprofiler >= 1.4.0
 Requires:   python%{pyver}-pecan >= 1.0.0
-Requires:   python%{pyver}-six >= 1.10.0
 Requires:   python%{pyver}-webob >= 1.7.1
 
 # Handle python2 exception
