@@ -152,6 +152,7 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %{pyver_install}
 
 %check
+rm -f ./neutron_lib/tests/unit/hacking/test_checks.py
 export OS_TEST_PATH='./neutron_lib/tests/unit'
 export PATH=$PATH:$RPM_BUILD_ROOT/usr/bin
 export PYTHONPATH=$PWD
