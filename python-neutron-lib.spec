@@ -151,3 +151,4 @@ PYTHON=python3 stestr-3 --test-path $OS_TEST_PATH run
 %endif
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/neutron-lib/commit/?id=245e005d1bbb9af5e57ff600fb97b2a13c85c83b
