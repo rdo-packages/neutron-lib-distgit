@@ -9,7 +9,7 @@
 %global common_desc OpenStack Neutron library shared by all Neutron sub-projects.
 
 Name:       python-%{library}
-Version:    2.15.1
+Version:    2.15.2
 Release:    1%{?dist}
 Summary:    OpenStack Neutron library
 License:    ASL 2.0
@@ -168,6 +168,9 @@ PYTHON=python3 stestr-3 --test-path $OS_TEST_PATH run || true
 %endif
 
 %changelog
+* Wed Feb 02 2022 RDO <dev@lists.rdoproject.org> 2.15.2-1
+- Update to 2.15.2
+
 * Mon Jan 17 2022 RDO <dev@lists.rdoproject.org> 2.15.1-1
 - Update to 2.15.1
 
