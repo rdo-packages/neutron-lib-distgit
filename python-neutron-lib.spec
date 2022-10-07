@@ -85,6 +85,7 @@ Requires:   python3-oslo-service >= 1.24.0
 Requires:   python3-oslo-utils >= 3.33.0
 Requires:   python3-oslo-versionedobjects >= 1.31.2
 Requires:   python3-sqlalchemy >= 1.2.0
+Requires:   python3-sqlalchemy < 1.4.0
 Requires:   python3-stevedore
 Requires:   python3-osprofiler >= 1.4.0
 Requires:   python3-pecan >= 1.0.0
