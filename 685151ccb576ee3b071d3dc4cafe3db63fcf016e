@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9165aaf7_40e17788",
+        "filename": "python-neutron-lib.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2023-12-12T19:03:33Z",
+      "side": 1,
+      "message": "you need this new deps also here as BR for running unit tests in %check during rpmbuild",
+      "range": {
+        "startLine": 48,
+        "startChar": 0,
+        "endLine": 48,
+        "endChar": 20
+      },
+      "revId": "685151ccb576ee3b071d3dc4cafe3db63fcf016e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
