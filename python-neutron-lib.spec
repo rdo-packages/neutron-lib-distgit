@@ -8,6 +8,10 @@
 
 %global common_desc OpenStack Neutron library shared by all Neutron sub-projects.
 
+# guard for Red Hat OpenStack Platform supported neutron-lib
+# (Wallaby only)
+%global rhosp 0
+
 Name:       python-%{library}
 Version:    2.10.2
 Release:    1%{?dist}
@@ -101,6 +105,9 @@ Requires:   python3-setproctitle
 Summary:    OpenStack Neutron library tests
 %{?python_provide:%python_provide python3-%{library}-tests}
 Requires:   python3-%{library} = %{version}-%{release}
+%if 0%{?rhosp}
+Requires:   python3-ddt >= 1.0.1
+%endif
 
 %description -n python3-%{library}-tests
 %{common_desc}
