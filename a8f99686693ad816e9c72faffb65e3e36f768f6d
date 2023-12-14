@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9a6a2134_9f5d46a1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2023-12-14T09:54:17Z",
+      "side": 1,
+      "message": "We would also need in antelope-rdo with next neutron-lib release for antelope. bobcat+ should be fine due do deps managed by pyproject macros.",
+      "revId": "a8f99686693ad816e9c72faffb65e3e36f768f6d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
