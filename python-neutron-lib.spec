@@ -42,6 +42,7 @@ BuildRequires:  openstack-macros
 Summary:    OpenStack Neutron library
 %{?python_provide:%python_provide python3-%{library}}
 # Required for tests
+BuildRequires: python3-ddt
 BuildRequires: python3-keystoneauth1
 BuildRequires: python3-oslotest
 BuildRequires: python3-stestr
@@ -100,6 +101,7 @@ Requires:   python3-setproctitle >= 1.1.10
 Summary:    OpenStack Neutron library tests
 %{?python_provide:%python_provide python3-%{library}-tests}
 Requires:   python3-%{library} = %{version}-%{release}
+Requires:   python3-ddt >= 1.0.1
 
 %description -n python3-%{library}-tests
 %{common_desc}
@@ -148,8 +150,7 @@ rm -f ./neutron_lib/tests/unit/hacking/test_checks.py
 export OS_TEST_PATH='./neutron_lib/tests/unit'
 export PATH=$PATH:$RPM_BUILD_ROOT/usr/bin
 export PYTHONPATH=$PWD
-# TODO - remove workaround in unit tests execution once we move to 2.15.0
-PYTHON=python3 stestr-3 --test-path $OS_TEST_PATH run || true
+PYTHON=python3 stestr-3 --test-path $OS_TEST_PATH run
 
 %files -n python3-%{library}
 %license LICENSE
