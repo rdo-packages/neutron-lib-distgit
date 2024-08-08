@@ -1,5 +1,5 @@
 %{!?sources_gpg: %{!?dlrn:%global sources_gpg 1} }
-%global sources_gpg_sign 0x2ef3fe0ec2b075ab7458b5f8b702b20b13df2318
+%global sources_gpg_sign 0xf8675126e2411e7748dd46662fc2093e4682645f
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 # we are excluding some BRs from automatic generator
@@ -17,7 +17,7 @@
 %global common_desc OpenStack Neutron library shared by all Neutron sub-projects.
 
 Name:       python-%{library}
-Version:    3.8.1
+Version:    3.8.2
 Release:    1%{?dist}
 Summary:    OpenStack Neutron library
 License:    Apache-2.0
@@ -136,6 +136,9 @@ rm -f ./neutron_lib/tests/unit/hacking/test_checks.py
 %endif
 
 %changelog
+* Thu Aug 08 2024 RDO <dev@lists.rdoproject.org> 3.8.2-1
+- Update to 3.8.2
+
 * Fri Jan 26 2024 RDO <dev@lists.rdoproject.org> 3.8.1-1
 - Update to 3.8.1
 
