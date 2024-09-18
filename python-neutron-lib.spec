@@ -17,7 +17,7 @@
 %global common_desc OpenStack Neutron library shared by all Neutron sub-projects.
 
 Name:       python-%{library}
-Version:    3.11.1
+Version:    3.15.0
 Release:    1%{?dist}
 Summary:    OpenStack Neutron library
 License:    Apache-2.0
@@ -136,6 +136,9 @@ rm -f ./neutron_lib/tests/unit/hacking/test_checks.py
 %endif
 
 %changelog
+* Wed Sep 18 2024 RDO <dev@lists.rdoproject.org> 3.15.0-1
+- Update to 3.15.0
+
 * Thu Aug 08 2024 RDO <dev@lists.rdoproject.org> 3.11.1-1
 - Update to 3.11.1
 
