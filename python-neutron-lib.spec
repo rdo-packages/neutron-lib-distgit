@@ -138,3 +138,4 @@ rm -f ./neutron_lib/tests/unit/hacking/test_checks.py
 %endif
 
 %changelog
+# REMOVEME: error caused by commit https://opendev.org/openstack/neutron-lib/commit/6dbe4b2e8cceb8c1af52a72696f7f7eb2efc9b5d
